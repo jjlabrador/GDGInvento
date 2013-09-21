@@ -1,10 +1,10 @@
 package com.gdgtenerife.gdginvento;
 
-import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
+import com.actionbarsherlock.app.SherlockActivity;
 
-public class Principal extends Activity {
+import android.os.Bundle;
+
+public class Principal extends SherlockActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -12,11 +12,5 @@ public class Principal extends Activity {
 		setContentView(R.layout.activity_principal);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.principal, menu);
-		return true;
-	}
 
 }
